@@ -16,7 +16,7 @@ namespace dbms_miniproject
 
     public partial class Form1 : Form
     {
-        SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\adesh\OneDrive\Documents\logindata.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\chand\OneDrive\Documents\loginData.mdf;Integrated Security=True;Connect Timeout=30");
         public Form1()
         {
             InitializeComponent();
@@ -143,7 +143,7 @@ namespace dbms_miniproject
             string newPassword = PromptInput("Enter new password:");
 
             // Update the database with the new username and password
-            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\adesh\OneDrive\Documents\logindata.mdf;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\chand\OneDrive\Documents\loginData.mdf;Integrated Security=True;Connect Timeout=30";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -221,7 +221,7 @@ namespace dbms_miniproject
         private string RetrieveUsername(string email)
         {
             string username = "";
-            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\adesh\OneDrive\Documents\logindata.mdf;Integrated Security=True;Connect Timeout=30;";
+            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\chand\OneDrive\Documents\loginData.mdf;Integrated Security=True;Connect Timeout=30";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -239,7 +239,7 @@ namespace dbms_miniproject
         private string RetrievePassword(string email)
         {
             string password = "";
-            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\adesh\OneDrive\Documents\logindata.mdf;Integrated Security=True;Connect Timeout=30;";
+            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\chand\OneDrive\Documents\loginData.mdf;Integrated Security=True;Connect Timeout=30";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {

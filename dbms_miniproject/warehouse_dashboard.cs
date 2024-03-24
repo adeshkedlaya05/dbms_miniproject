@@ -50,7 +50,7 @@ namespace dbms_miniproject
 
             this.Hide();
         }
-        private const string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\adesh\OneDrive\Documents\logindata.mdf;Integrated Security=True;Connect Timeout=30;Encrypt=False";
+        private const string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\chand\OneDrive\Documents\loginData.mdf;Integrated Security=True;Connect Timeout=30";
         private void UpdateProductCountLabel()
         {
             using (SqlConnection connection = new SqlConnection(connectionString))

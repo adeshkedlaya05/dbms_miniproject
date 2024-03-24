@@ -39,7 +39,7 @@ namespace dbms_miniproject
             // Close the current form (warehouse_forum)
             this.Close();
         }
-        private const string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\adesh\OneDrive\Documents\logindata.mdf;Integrated Security=True;Connect Timeout=30;Encrypt=False";
+        private const string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\chand\OneDrive\Documents\loginData.mdf;Integrated Security=True;Connect Timeout=30";
         private void button2_Click(object sender, EventArgs e)
         {
             using (var form = new Form())
